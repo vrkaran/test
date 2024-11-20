@@ -44,83 +44,43 @@
             text-shadow: #FC0 1px 0 6px;
             text-decoration: none;
         }
-        
         #progressBar {
             position: fixed;
             top: 0;
             left: 0;
             width: 0%;
             height: 8px;
-            background-color: #e21f1f;
+            background-color: #b80d0d;
             z-index: 9999;
         }
-               
-.center-links .nav-item .dropdown-menu {
-  background-color:#212123;
-  color: white;
-  border-radius: 0;
-  border: none;
-  padding-top: 0;
+        .home-ali {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px; 
+    align-items: center;
+
+    @media (max-width: 768px) {
+        .card-home img {
+            width: -webkit-fill-available;
+        }
+        
+    }
 }
 
-.center-links .nav-item .dropdown-menu {
-  background-color: #ffffff;
-  color: white;
-  border-radius: 0;
-  border: none;
-  padding-top: 0;
+.typing-effect {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+.highlight-text{
+    color:#D0EEB0;
 }
 
-.dropdown-item:hover {
-  background-color: #58a9ff;
-  color: #fff;
-  transform: scale(1.1);
+.service-icon{
+    height:15% !important;
+    width: 15% !important;
+    opacity: 1 !important;
 }
-
-.dropdown-item {
-  padding: 4px 8px;
-  color: white;
-  font-size: 15px;
-  background-color: #137cbd;
-  transition: background-color 0.3s, transform 0.3s;
-
-}
-
-/* Navbar Styles */
-.navbar {
-    background-color: #f8f9fa; /* Light background for the navbar */
-}
-
-.navbar .navbar-nav .nav-link {
-    color: black; /* Default link color */
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #007bff; /* Link color on hover */
-}
-
-.dropdown-menu {
-    background-color: #ffffff; /* Dropdown background color */
-    border-radius: 0; /* Remove border radius */
-}
-
-.dropdown-item {
-    color: black; /* Dropdown item text color */
-}
-
-.dropdown-item:hover {
-    background-color: #58a9ff; /* Background color on hover */
-    color: white; /* Text color on hover */
-}
-
-.navbar-toggler {
-    border-color: rgba(0, 0, 0, 0.1); /* Toggler border color */
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Default icon */
-}
-
 #preloader {
     position: fixed;
     top: 0;
@@ -135,30 +95,32 @@
 }
 
 #preloader-video {
-    width: 100%; /* Set width to 100% */
-    height: 100%; /* Set height to 100% */
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 200%; 
+    height: auto; 
+    max-width: 600px; 
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 780px) {
-    #preloader {
-        width: 100%; /* Ensure it takes the full width */
-        height: 100%; /* Ensure it takes the full height */
-    }
-    #preloader-video {
-        width: 100%; /* Ensure video takes full width */
-        height: 100%; /* Ensure video takes full height */
-    }
+   
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 48%;
+    background: #f6f5f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
 }
 #preloader-video {
     width: 100%; 
     height: auto; 
     max-width: 600px; 
 }
-
-
-
+}
 .circle {
       position: absolute;
       width: 20px;
@@ -189,7 +151,6 @@
         display: none;
       }
     }
-
     </style>
 </head>
 
@@ -327,61 +288,117 @@
             </a>
 
             <!-- Centered Navbar Links -->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img id="theme-toggle-logo" style="height: 50px; width: 50px;" src="Images/logo/Logo-Light.png" alt="Brand Logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto"> <!-- Center the links -->
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html" style="color: black;">
-                                    <i class="fa-solid fa-house"></i> Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Html-files/menu.html" style="color: black;">
-                                    <i class="fa-solid fa-bars"></i> Menu
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="Html-files/services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                                    <i class="fa-solid fa-gear"></i> Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check"></i> Ordering options</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-truck"></i> Order Tracking</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headset"></i> Customer Support</a></li>
-                                    <li><a class="dropdown-item" href="#FAQ"><i class="fa-solid fa-question"></i> FAQS</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Html-files/contact.html" style="color: black;">
-                                    <i class="fa-solid fa-phone"></i> Contact Us 
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" style="color: black;">
-                                    <i class="fa-solid fa-question"></i> FAQ 
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Html-files/offers.html" style="color: black;">
-                                    <i class="fa-solid fa-tag"></i> Offers
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Html-files/RateUs.html" style="color: black;">
-                                    <i class="fa-solid fa-star"></i> Rate Us
-                                </a>
-                            </li>
+            <div 
+            style=" margin-left: 20vw;"
+            class="collapse navbar-collapse hamburgeritems centerdiv order-2 order-lg-0">
+                <ul class="navbar-nav center-links">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: black;">
+
+
+                            <i class="fa-solid fa-house"></i> Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Html-files/menu.html" style="color: black;">
+
+                            <i class="fa-solid fa-bars"></i> Menu
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="Html-files/services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                            <i class="fa-solid fa-gear"></i> Services
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check" ></i> Ordering options</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-truck"></i> Order Tracking</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headset"></i> Customer Support</a></li>
+                            <li><a class="dropdown-item" href="#FAQ"><i class="fa-solid fa-question"></i> FAQS</a></li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
+                    </li>
+
+                    <!-- <li class="nav-item, nav-items">
+                        <a class="nav-link" href="Html-files/contact.html"><i class="fa-solid fa-phone"></i>Contact Us</a>
+
+                        
+
+                    </li> -->
+
+                   
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="Html-files/contact.html" style="color: black;">
+                            <i class="fa-solid fa-phone"></i> Contact Us 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#" style="color: black;">
+                            <i class="fa-solid fa-question"></i> FAQ 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Html-files/offers.html" style="color: black;">
+
+                            <i class="fa-solid fa-tag"></i> Offers
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Html-files/RateUs.html" style="color: black;">
+                            <i class="fa-solid fa-star"></i> Rate Us
+                        </a>
+                    </li>
+                    
+                    
+
+                </ul>
+            </div>
+            
+            <span class="slider" style="width: 40px; height: 20px; display: none;"></span> 
+
+                        
+            <!-- Navbar Toggler -->
+    
+            <div class="mobile-menu ">
+                <div class="mobile-menu__trigger"><span></span></div>
+                <a class="page-scroll" href="index.html">
+                    <i class="fa-solid fa-house"></i> 
+                    Home
+                </a>
+                <a class="page-scroll" href="Html-files/menu.html">
+                    <i class="fa-solid fa-bars"></i> Menu
+                </a>
+                <a class="page-scroll" href="Html-files/services.html">
+                    <i class="fa-solid fa-gear"></i> Services
+                </a>
+                <a class="page-scroll active-link" href="Html-files/login.html">
+                    <i class="fa-solid fa-phone"></i> Contact Us
+                </a>
+                <a class="page-scroll active-link" href="Html-files/login.html">
+                    <i class="fa-solid fa-question"></i> FAQ
+                </a>
+                <a class="page-scroll active-link" href="Html-files/login.html">
+                    <i class="fa-solid fa-tag"></i> Offers
+                </a>
+                <a class="page-scroll active-link" href="Html-files/login.html">
+                    <i class="fa-solid fa-star"></i> Rate Us
+                </a>
+                <a class="page-scroll active-link" href="Html-files/login.html">
+                    <i class="fa-solid fa-sign-in"></i> Login
+                </a>
+                <a class="page-scroll" href="Html-files/signup.html">
+                    <i class="fa-solid fa-user"></i> Sign-Up
+                </a>
+                <a class="page-scroll" href="Html-files/cart.html">
+                    Cart <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+
             <!-- End Navbar Links -->
 
 
@@ -950,10 +967,10 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="img-box my-5">
-                        <img src="Images/testimonials/client1.jpg" alt="">
+                        <img src="client1.png" alt="">
                     </div>
                     <div class="carousel-caption">
-                        <h3 class="overview">Matt Gilbert</h3>
+                        <h3 class="overview">Raj Gupta</h3>
                         <p class="testimonial-text">HealthyBites Express never disappoints! The food is always fresh, delicious, and delivered right on time. My go-to for all my meals!</p>
                         <div class="star-rating">
                             <ul class="list-inline d-flex justify-content-center">
@@ -968,10 +985,10 @@
                 </div>
                 <div class="carousel-item">
                     <div class="img-box my-5">
-                        <img src="Images/testimonials/client2.jpg" alt="">
+                        <img src="client7.jpg" alt="">
                     </div>
                     <div class="carousel-caption">
-                        <h3 class="overview">John Doe</h3>
+                        <h3 class="overview">Priya Sharma</h3>
                         <p class="testimonial-text">I love the variety on HealthyBites Express! There's something for everyone, and the delivery service is incredibly reliable</p>
                         <div class="star-rating">
                             <ul class="list-inline d-flex justify-content-center">
@@ -985,10 +1002,10 @@
                 </div>
                 <div class="carousel-item">
                     <div class="img-box my-5">
-                        <img src="Images/testimonials/client3.jpg" alt="">
+                        <img src="client5.png" alt="">
                     </div>
                     <div class="carousel-caption">
-                        <h3 class="overview">Laren Green</h3>
+                        <h3 class="overview">Ankush kumar</h3>
                         <p class="testimonial-text">Fantastic service and mouth-watering dishes! HealthyBites Express has made my dining experience so much more convenient.</p>
                         <div class="star-rating">
                             <ul class="list-inline d-flex justify-content-center">
@@ -1213,12 +1230,10 @@
         <div class="container">
             <h4 class="follow-us">Follow Us</h4>
             <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" class="facebook"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                <a href="https://www.linkedin.com/company/healthybitesexpress/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-beat"></i></a>
                 <a href="https://www.instagram.com/healthybites_express/" target="_blank" class="instagram"><i class="fa-brands fa-instagram fa-beat"></i></a>
-                <a href="https://twitter.com" target="_blank" class="twitter"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-beat"></i></a>
-                <a href="https://github.com/khushi-joshi-05/Food-ordering-website" target="_blank" class="github"><i class="fa-brands fa-github fa-beat"></i></a>
-                <a href="https://discord.com/invite/sybYafYA" target="_blank" class="discord"><i class="fa-brands fa-discord fa-beat"></i></a>
+                <a href="https://www.facebook.com/people/HealthyBites-Express/61569029786869/" target="_blank" class="facebook"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                <a href="https://x.com/healthybites_ex" target="_blank" class="twitter"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
             </div>
             <p class="social-text">Stay connected with us on social media for the latest updates, recipes, and HealthyBites Express adventures.</p>
         </div>

@@ -81,28 +81,32 @@
 }
 
 #preloader-video {
-    width: 100%; /* Set width to 100% */
-    height: 100%; /* Set height to 100% */
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 200%; 
+    height: auto; 
+    max-width: 600px; 
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 780px) {
-    #preloader {
-        width: 100%; /* Ensure it takes the full width */
-        height: 100%; /* Ensure it takes the full height */
-    }
-    #preloader-video {
-        width: 100%; /* Ensure video takes full width */
-        height: 100%; /* Ensure video takes full height */
-    }
+   
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 48%;
+    background: #f6f5f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
 }
 #preloader-video {
     width: 100%; 
     height: auto; 
     max-width: 600px; 
 }
-
+}
 
 
 .circle {
@@ -232,23 +236,23 @@
         <div class="card" style="--clr: #009688">
           <div class="imgbx">
             <img
-              src="https://destinationlesstravel.com/wp-content/uploads/2023/09/A-selection-of-local-cuisine-as-seen-on-a-food-tour-in-Lima-Peru-that-we-got-to-try.jpg.webp"
+              src="../Images/image-gallery/freewater.png"
             />
           </div>
           <div class="content">
-            <h2>Food Tour and Experiences</h2>
-            <a href="#">Take Experience</a>
+            <h2>Free Water</h2>
+            <a href="https://vrkaran.github.io/h2o/">Put Your Brand In Everyone's Hand!</a>
           </div>
         </div>
         <div class="card" style="--clr: #ff3e7f">
           <div class="imgbx">
             <img
-              src="https://www.kitchenmantra.com/blog/wp-content/uploads/2020/11/Best-corporate-caterers-in-Noida.jpg"
+              src="../Images/image-gallery/trainfood.png"
             />
           </div>
           <div class="content">
-            <h2>Catering Services for Events</h2>
-            <a href="foodcatering.html">Book Catering</a>
+            <h2>Train Food</h2>
+            <a href="foodcatering.html">Your Order Delivered to Your Train Seat </a>
           </div>
         </div>
         <div class="card" style="--clr: #03a9f4">
@@ -277,11 +281,11 @@
                 <div class="testimonal__swiper">
                     <div>
                         <article class="testimonal__card">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover"
+                            <img src="../client12.png" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover"
                             />
                             <h2 class="testimonal__title">Riya Jain</h2>
                             <p class="testimonal__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus quidem nostrum neque molestiae fugiat id ex consequatur atque quia quisquam hic accusamus dolores sapiente, ipsum maxime, quo odit ut.
+                                After a hectic day at work, Healthybites saved me! I ordered their North Indian dinner, and it was delicious, fresh, and delivered right to my room. It felt like a homemade meal – exactly what I needed. Highly recommend their service
                             </p>
 
                             <div class="testimonal__stars">
@@ -297,10 +301,10 @@
                 <div class="testimonal__swiper">
                     <div>
                         <article class="testimonal__card">
-                            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover" />
-                            <h2 class="testimonal__title">Sudhanshu Sharma</h2>
+                            <img src="../client1.png" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover" />
+                            <h2 class="testimonal__title">Raj Gupta</h2>
                             <p class="testimonal__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus quidem nostrum neque molestiae fugiat id ex consequatur atque quia quisquam hic accusamus dolores sapiente, ipsum maxime, quo odit ut.
+                                Healthybites made my train journey so relaxing! I ordered Kurkure, tea, and water, and it was delivered right to my seat in no time. The service is quick, and the quality is excellent. Traveling has never been this easy!
                             </p>
 
                             <div class="testimonal__stars">
@@ -316,10 +320,10 @@
                 <div class="testimonal__swiper">
                     <div>
                         <article class="testimonal__card">
-                            <img src="https://blogs.kcl.ac.uk/editlab/files/2017/04/Elena-2-Cropped-200x2801.jpg" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover" />
-                            <h2 class="testimonal__title">Angel Dravid</h2>
+                            <img src="../client7.jpg" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover" />
+                            <h2 class="testimonal__title">Priya sharma</h2>
                             <p class="testimonal__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus quidem nostrum neque molestiae fugiat id ex consequatur atque quia quisquam hic accusamus dolores sapiente, ipsum maxime, quo odit ut.
+                                Healthybites is my go-to for lunch during busy workdays. The food is flavorful and delivered on time, which is a lifesaver for someone with a packed schedule. It’s like getting a little taste of home, and I couldn’t be happier!
                             </p>
 
                             <div class="testimonal__stars">
@@ -335,10 +339,10 @@
                 <div class="testimonal__swiper">
                     <div>
                         <article class="testimonal__card">
-                            <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover" />
-                            <h2 class="testimonal__title">Priya Sharma</h2>
+                            <img src="../client10.png" alt="" class="testimonal__image" style="border-radius: 50%; object-fit: cover" />
+                            <h2 class="testimonal__title">Rohit Yadav</h2>
                             <p class="testimonal__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus quidem nostrum neque molestiae fugiat id ex consequatur atque quia quisquam hic accusamus dolores sapiente, ipsum maxime, quo odit ut.
+                                Got my Pizza and coffee delivered straight to my seat – hassle-free and super convenient! Healthybites is perfect for travelers who want great service without leaving their seats. Loved it!.
                             </p>
 
                             <div class="testimonal__stars">
@@ -469,14 +473,12 @@
             <div class="media-handles pt-3 pb-2">
                 <h4>Follow Us</h4>
                 <div class="social-icons">
-                    <a class="fa-brands fa-facebook" href="https://facebook.com" target="_blank"></a>
-                    <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"></a>
-                    <a class="fa-brands fa-x-twitter" href="https://twitter.com" target="_blank"></a>
-                    <a class="fa-brands fa-snapchat" href="https://snapchat.com" target="_blank"></a>
-                    <a class="fa-brands fa-youtube" href="https://youtube.com" target="_blank"></a>
-                    <a class="fa-brands fa-linkedin" href="https://linkedin.com" target="_blank"></a>
-                    <a class="fa-brands fa-github" href="https://github.com/khushi-joshi-05/Food-ordering-website" target="_blank"></a>
-                    <a class="fa-brands fa-discord" href="https://discord.com/invite/sybYafYA" target="_blank"></a>
+                <a href="https://www.linkedin.com/company/healthybitesexpress/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                <a href="https://www.instagram.com/healthybites_express/" target="_blank" class="instagram"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                <a href="https://www.facebook.com/people/HealthyBites-Express/61569029786869/" target="_blank" class="facebook"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                <a href="https://x.com/healthybites_ex" target="_blank" class="twitter"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
+                <!--<a href="https://github.com/vrkaran" target="_blank" class="github"><i class="fa-brands fa-github fa-beat"></i></a>
+                <a href="https://discord.com/invite/" target="_blank" class="discord"><i class="fa-brands fa-discord fa-beat"></i></a>-->
                 </div>
                 <p class="text"> Stay connected with us on social media for the latest updates, recipes, and HealthyBites adventures. </p>
                 <div>
@@ -506,7 +508,7 @@
                 </Link>
 
                 <span id="author">
-                    <a href="https://www.linkedin.com/in/khushi-joshi-95a587256/" target="_blank" class="legal-pages">Khushi Joshi</a>
+                    <a href="https://www.linkedin.com/in/vrkaran" target="_blank" class="legal-pages">Karan Vishwakarma</a>
                 </span>
             </div>
         </div>
